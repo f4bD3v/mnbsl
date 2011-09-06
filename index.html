@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>HTML 5 complete</title>
+<title>Mun Team Uni Basel</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link rel="stylesheet/less" type="text/css" href="css/theme.css" />
+<link rel="stylesheet/less" type="text/css" href="css/theme.less" />
 <script type="text/javascript" src="vendors/js/jquery-1.6.2.min.js"></script> 
 <script type="text/javascript" src="vendors/js/less-1.1.3.min.js"></script> 
 <!--[if IE]>
@@ -13,22 +13,59 @@
 <![endif]-->
 </head>
 <body>
-	<header>
-		<div class="top-bar"></div>
-		<nav></nav>
-	</header>
-	<div id="content">
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-		no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-		consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-		labore et dolore magna aliquyam erat, sed diam voluptua. 
-		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-		no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+	<div id="top-bar"></div>
+	<div id="container">
+		<header>
+			<img id="panorama" src="img/panorama.png" />
+			<span id="project-notice">visit our project: <a href="/" title="Mun Regio Basel">Mun Regio Basel</a></span>
+			<nav id="top-nav">
+				<ul>
+					<li>home</li>
+					<li>contact us</li>
+					<li>member login</li>
+				</ul>
+			</nav>
+			<img id="logo" src="img/logo-volume.png" alt="Mun Team Uni Basel"/>
+			<h1 id="heading">Mun Team<span class="right">Uni Basel</span></h1>
+		</header>
+		<div id="inner-container">
+			<nav id="main-nav">
+				<ul>
+					<li>News</li>
+					<li>About us</li>
+					<li>Partners</li>
+					<li>Blog</li>
+					<li>Gallery</li>
+					<li>Contact us</li>
+				</ul>
+			</nav>
+			<div id="image-container">
+				<span><a href="#" title="">play</a><a href="#" title="">hide</a><a id="open-slideshow" href="#" title="">open slideshow</a></span>
+				<ul id="image-slider">
+					<li><img src="img/slideshow/test.jpg" /></li>
+				</ul>
+			</div>
+			<!-- [if IE lte 9]>
+				start-using-a-webstandard-conform-browser-notice
+			<![endif]-->
+			<div id="content">
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+				no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+				consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+				labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+				no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<footer>
+			<span>Copyright <strong>Mun Team Uni Basel</strong> 2011</span>
+			<ul id="social-media">
+				<li>Facebook</li>
+				<li>Twitter</li>
+			</ul>
+		</footer>
 	</div>
-	<footer>
-		<nav id="social-media"></nav>
-	</footer>
 </body>
 </html>
