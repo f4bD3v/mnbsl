@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1dad077c4025c0d2b59731ffaad3d65e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fc204196892948234ec2f3031a68266d',
+  'native_key' => 'default_template',
+  'object' => '{"key":"default_template","value":"parent","xtype":"textfield","namespace":"frontpage","area":"Frontpage","editedon":null}',
+);

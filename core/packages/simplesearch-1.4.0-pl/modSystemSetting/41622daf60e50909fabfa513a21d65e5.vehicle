@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sisea',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8b5496d816ecf9f258e6fbc457e0496a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '41622daf60e50909fabfa513a21d65e5',
+  'native_key' => 'sisea.solr.timeout',
+  'object' => '{"key":"sisea.solr.timeout","value":30,"xtype":"textfield","namespace":"sisea","area":"Solr","editedon":null}',
+);

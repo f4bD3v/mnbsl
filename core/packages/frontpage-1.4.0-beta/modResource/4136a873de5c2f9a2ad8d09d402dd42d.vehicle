@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '93de7ab1a8ce31717d17b80f9d1abba7',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '4136a873de5c2f9a2ad8d09d402dd42d',
+  'native_key' => NULL,
+  'object' => '{"id":null,"type":"document","contentType":"text\\/plain","pagetitle":"Frontpage AJAX","longtitle":"Frontpage Editor AJAX Resource","description":"","alias":"ajax","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"[[!frontpageAJAX]]","richtext":0,"template":0,"menuindex":0,"searchable":0,"cacheable":0,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"haskeywords":0,"hasmetatags":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":3}',
+);

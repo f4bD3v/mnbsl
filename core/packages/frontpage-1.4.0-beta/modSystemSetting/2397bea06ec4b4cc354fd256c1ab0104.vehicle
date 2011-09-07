@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6e247214a0ac4ee7dbd4146b7ca5737b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2397bea06ec4b4cc354fd256c1ab0104',
+  'native_key' => 'ajax_resource-aloha',
+  'object' => '{"key":"ajax_resource-aloha","value":0,"xtype":"textfield","namespace":"frontpage","area":"Frontpage","editedon":null}',
+);

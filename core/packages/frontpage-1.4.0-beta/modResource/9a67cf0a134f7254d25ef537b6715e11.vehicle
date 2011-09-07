@@ -1,0 +1,40 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'frontpage',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"frontpage-1.4.0-beta\\/modResource\\/9a67cf0a134f7254d25ef537b6715e11.resolver.resolver","name":"resolver"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"frontpage-1.4.0-beta\\/modResource\\/9a67cf0a134f7254d25ef537b6715e11\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"frontpage"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"frontpage-1.4.0-beta\\/modResource\\/9a67cf0a134f7254d25ef537b6715e11\\/2\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"frontpage"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"frontpage-1.4.0-beta\\/modResource\\/9a67cf0a134f7254d25ef537b6715e11.validator.validator","name":"validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f57a9868058680511208f2e970eb6e97',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '9a67cf0a134f7254d25ef537b6715e11',
+  'native_key' => NULL,
+  'object' => '{"id":null,"type":"document","contentType":"text\\/plain","pagetitle":"Frontpage AJAX Aloha","longtitle":"Frontpage Editor Aloha AJAX Resource","description":"","alias":"ajax-aloha","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"[[!frontpageAJAX-Aloha]]","richtext":0,"template":0,"menuindex":0,"searchable":0,"cacheable":0,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"haskeywords":0,"hasmetatags":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":3}',
+);

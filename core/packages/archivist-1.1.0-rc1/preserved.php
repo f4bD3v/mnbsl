@@ -1,0 +1,36 @@
+<?php return array (
+  '0344a446e69959924a371ac85a8dd70a' => 
+  array (
+    'files' => 
+    array (
+      0 => '/var/www/mnbsl/core/components/archivist/model/archivist/archivist.class.php',
+      1 => '/var/www/mnbsl/core/components/archivist/model/archivist',
+      2 => '/var/www/mnbsl/core/components/archivist/model',
+      3 => '/var/www/mnbsl/core/components/archivist/includes/include.parsetpl.php',
+      4 => '/var/www/mnbsl/core/components/archivist/includes',
+      5 => '/var/www/mnbsl/core/components/archivist/elements/chunks/row.chunk.tpl',
+      6 => '/var/www/mnbsl/core/components/archivist/elements/chunks/archiveditem.chunk.tpl',
+      7 => '/var/www/mnbsl/core/components/archivist/elements/chunks/monthcontainer.chunk.tpl',
+      8 => '/var/www/mnbsl/core/components/archivist/elements/chunks/yearcontainer.chunk.tpl',
+      9 => '/var/www/mnbsl/core/components/archivist/elements/chunks/itembrief.chunk.tpl',
+      10 => '/var/www/mnbsl/core/components/archivist/elements/chunks',
+      11 => '/var/www/mnbsl/core/components/archivist/elements/plugins/plugin.archivistfurl.php',
+      12 => '/var/www/mnbsl/core/components/archivist/elements/plugins',
+      13 => '/var/www/mnbsl/core/components/archivist/elements/snippets/snippet.archivistgrouper.php',
+      14 => '/var/www/mnbsl/core/components/archivist/elements/snippets/snippet.getarchives.php',
+      15 => '/var/www/mnbsl/core/components/archivist/elements/snippets/snippet.archivist.php',
+      16 => '/var/www/mnbsl/core/components/archivist/elements/snippets',
+      17 => '/var/www/mnbsl/core/components/archivist/elements',
+      18 => '/var/www/mnbsl/core/components/archivist/lexicon/en/properties.inc.php',
+      19 => '/var/www/mnbsl/core/components/archivist/lexicon/en/default.inc.php',
+      20 => '/var/www/mnbsl/core/components/archivist/lexicon/en',
+      21 => '/var/www/mnbsl/core/components/archivist/lexicon',
+      22 => '/var/www/mnbsl/core/components/archivist/docs/readme.txt',
+      23 => '/var/www/mnbsl/core/components/archivist/docs/changelog.txt',
+      24 => '/var/www/mnbsl/core/components/archivist/docs/license.txt',
+      25 => '/var/www/mnbsl/core/components/archivist/docs',
+      26 => '/var/www/mnbsl/core/components/archivist',
+      27 => '/var/www/mnbsl/core/components',
+    ),
+  ),
+);

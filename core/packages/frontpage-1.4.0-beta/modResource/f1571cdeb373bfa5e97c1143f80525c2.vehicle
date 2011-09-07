@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3b42b92a0f7d5cee7b27f6503d151700',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => 'f1571cdeb373bfa5e97c1143f80525c2',
+  'native_key' => NULL,
+  'object' => '{"id":null,"type":"document","contentType":"text\\/html","pagetitle":"Frontpage Create Aloha","longtitle":"Frontpage Editor Aloha Create Resource","description":"","alias":"create-aloha","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"[[!frontpageCreate-Aloha]]\\n[[!$frontpageCreate-Aloha]]","richtext":0,"template":0,"menuindex":0,"searchable":0,"cacheable":0,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"haskeywords":0,"hasmetatags":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":1}',
+);
