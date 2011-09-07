@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'FrutigerRegular';
+    src: url('frutiger-webfont.eot');
+    src: url('frutiger-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frutiger-webfont.woff') format('woff'),
+         url('frutiger-webfont.ttf') format('truetype'),
+         url('frutiger-webfont.svg#FrutigerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

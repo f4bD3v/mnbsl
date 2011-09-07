@@ -58,6 +58,7 @@
 body {
 	background-color: @bg;
 	color: @body-font;
+	font: 15px 'FrutigerRegular', 'Arial Bold', Helvetica, sans-serif;
 }
 
 #top-bar {
@@ -152,11 +153,11 @@ header {
 		background-color:@gold;
 		text-transform: uppercase;
 		font: 15px bolder Arial, Helvetica, sans-serif;
-		height:50px;
+		height:40px;
 		width:900px;
 		.rounded-top(10px);
 		.gradient();
-		.white-text-shadow(0.5);
+		.white-text-shadow(0.3);
 		border-bottom: 1px solid #dabd00;
 	
 		ul {
@@ -168,18 +169,86 @@ header {
 			li {
 				float:left;
 				display:inline;
-				width:113px;
-				margin-top:18px;
-				padding-left:20px;
-				
-				a {
-					color:#000;
-					.white-text-shadow();
+				width:123px;
+				padding-top:12px;
+				height:28px;
+				padding-left:10px;
 				
 					&:hover {
-						text-decoration:underline;
+						background-color: @gold;
+						border-left:1px solid #dabd00;
+						width:122px;
+						padding-left:9px;
+						border-right:1px solid rgba(255,255,255,0.1);
+						
+						a {
+							text-shadow:none;
+						}
+					
+						ul {
+							display:block;
+							
+							li a {
+								text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+							}
+						}
+					
+					}
+					
+					ul {
+						position:absolute;
+						top:40px;
+						width:133px;
+						margin:0;
+						margin-left:-10px;
+						width:auto;
+						padding:0;
+						display:none;
+						background-color: @gold;
+						z-index:100;
+						border-bottom:1px solid #dabd00;
+						border-right:1px solid #dabd00;
+						border-left:1px solid #dabd00;
+						
+						li { 
+							font-size:12px;
+							text-transform:none;
+							float:left;
+							width: auto; line-height:13px;
+							display:inline;
+							margin: 0 10px 0 0;
+							padding:5px 10px;
+							height:auto;
+							
+							&.last {
+								margin:0;
+							}
+							
+							&:hover {
+								border:none;	width:auto; padding: 5px 10px;
+							}
+							
+							a {
+								color:#fff;
+								text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+								
+								&:hover {
+									text-decoration:underline;
+								}
+							}
+						}
+					}
+				
+				a {
+					color:#444;
+					.white-text-shadow(0.6);
+				
+					&:hover {
+						text-decoration:none;
+						text-shadow:none;
 					}
 				}
+				
 			}	
 		}
 	}
@@ -225,6 +294,24 @@ header {
 		width:800px;
 		padding: 0 50px;
 		margin: 20px 0;
+		
+		/* forms */
+		input, textarea {
+			display:block;
+			border:5px solid #ddd;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			-khtml-border-radius:3px;
+			margin:5px 0 13px 0;
+			
+			&:focus {
+				border:5px solid @yellow;
+			}
+		}
+		
+		label {
+			display:block;
+		}
 	}
 }
 
