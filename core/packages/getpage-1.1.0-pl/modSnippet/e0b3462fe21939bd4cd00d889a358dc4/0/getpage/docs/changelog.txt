@@ -1,0 +1,24 @@
+Changelog for getPage.
+
+getPage 1.1.0-pl (March 27, 2011)
+====================================
+- Change default cacheKey property to use 'resource' (for MODX 2.1+)
+
+getPage 1.0.0-pl (August 18, 2010)
+====================================
+- Add support for snippets that send output toPlaceholder
+- Add firstItem and lastItem properties/placeholders
+- Add pageActiveTpl to differentiate current page link
+
+getPage 1.0.0-rc1 (June 29, 2010)
+====================================
+- Add per page caching capabilities
+- Add changelog, license, and readme
+
+getPage 1.0.0-beta2 (May 28, 2010)
+====================================
+- Preserve additional query string parameters when creating paging navigation
+
+getPage 1.0.0-beta1 (March 19, 2010)
+====================================
+- Initial release

@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0467efefef05147a234eaa538d9f4bf6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7dccb38ac9a808b13be88a47b9a005c6',
+  'native_key' => 'create_resource-aloha',
+  'object' => '{"key":"create_resource-aloha","value":"0","xtype":"textfield","namespace":"frontpage","area":"Frontpage","editedon":null}',
+);

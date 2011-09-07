@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2a5a96b4c94498e4b8c6f5970ec65a6a',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '475c31d045aa78d4e6db508f104679c3',
+  'native_key' => NULL,
+  'object' => '{"id":null,"type":"document","contentType":"text\\/html","pagetitle":"Frontpage Edit","longtitle":"Frontpage Editor Edit Resource","description":"","alias":"edit","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"[[!frontpageEdit]]\\n[[!$frontpageEdit]]","richtext":0,"template":0,"menuindex":0,"searchable":0,"cacheable":0,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"haskeywords":0,"hasmetatags":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":1}',
+);

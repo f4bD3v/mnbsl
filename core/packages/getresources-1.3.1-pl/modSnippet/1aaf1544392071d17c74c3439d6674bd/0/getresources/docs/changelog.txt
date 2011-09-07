@@ -1,0 +1,47 @@
+Changelog for getResources.
+
+getResources 1.3.1-pl (July 14, 2011)
+====================================
+- [#43] Allow 0 as idx property
+- [#9] Fix tvFilters grouping
+- [#46] Fix criteria issue with &resources property
+
+getResources 1.3.0-pl (March 28, 2011)
+====================================
+- [#33] sortbyTVType: Allow numeric and datetime TV sorting via SQL CAST()
+- [#24] Fix typos in list property options
+- [#4] Support multiple sortby fields via JSON object
+- Use get() instead to toArray() if includeContent is false
+- [#22] Add &toSeparatePlaceholders property for splitting output
+
+getResources 1.2.2-pl (October 18, 2010)
+====================================
+- [#19] Fix sortbyTV returning duplicate rows
+
+getResources 1.2.1-pl (October 11, 2010)
+====================================
+- Remove inadvertent call to modX::setLogTarget('ECHO')
+
+getResources 1.2.0-pl (September 25, 2010)
+====================================
+- Fix error when &parents is not set
+- Allow empty &sortby
+- Add ability to sort by a single Template Variable value (or default value)
+
+getResources 1.1.0-pl (July 30, 2010)
+====================================
+- Added &toPlaceholder property for assigning results to a placeholder
+- Added &resources property for including/excluding specific resources
+- Added &showDeleted property
+- Allow multiple contexts to be passed into &context
+- Added &showUnpublish property
+- Added getresources.core_path reference for easier development
+- [#ADDON-135] Make output separator configurable via outputSeparator property
+- Add where property to allow ad hoc criteria in JSON format
+
+getResources 1.0.0-ga (December 29, 2009)
+====================================
+- [#ADDON-81] Allow empty tvPrefix property.
+- [#ADDON-89] Allow parents property to have a value of 0.
+- Changed default value of sortbyAlias to empty string and added sortbyEscaped property with default of 0.
+- Added changelog, license, and readme.

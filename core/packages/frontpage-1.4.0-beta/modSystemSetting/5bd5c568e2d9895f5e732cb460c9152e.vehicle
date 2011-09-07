@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c6665abfeb6b091698ab27c69e2623cc',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5bd5c568e2d9895f5e732cb460c9152e',
+  'native_key' => 'create_resource',
+  'object' => '{"key":"create_resource","value":"0","xtype":"textfield","namespace":"frontpage","area":"Frontpage","editedon":null}',
+);

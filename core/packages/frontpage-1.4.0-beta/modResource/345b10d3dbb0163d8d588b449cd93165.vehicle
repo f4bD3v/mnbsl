@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '271393a00cf02a6bc8cdbbe9a3d57928',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '345b10d3dbb0163d8d588b449cd93165',
+  'native_key' => NULL,
+  'object' => '{"id":null,"type":"document","contentType":"text\\/html","pagetitle":"Frontpage","longtitle":"Frontpage Editor Resources","description":"","alias":"frontpage","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":1,"introtext":null,"content":null,"richtext":0,"template":0,"menuindex":0,"searchable":0,"cacheable":0,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"haskeywords":0,"hasmetatags":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":1}',
+);

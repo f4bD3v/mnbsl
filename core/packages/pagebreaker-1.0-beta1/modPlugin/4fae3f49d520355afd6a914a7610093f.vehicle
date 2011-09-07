@@ -1,0 +1,54 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '794ed9620480b502e481bbf86f1600b7' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":13,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+        'guid' => '7d420c88a0f37f2cabc218aee3744e4f',
+        'native_key' => 
+        array (
+          0 => 13,
+          1 => 'OnLoadWebDocument',
+        ),
+        'signature' => '77a6817def83bbe8e08463c0e2890f5b',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'pagebreaker',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bb3b6dd55050f49d50c8df8644ef9d27',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '4fae3f49d520355afd6a914a7610093f',
+  'native_key' => 13,
+  'object' => '{"id":13,"name":"PageBreaker","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"if ($modx->Event->name == \'OnLoadWebDocument\') {\\n  \\/*\\tconfig\\t*\\/\\n  $splitter = \'<!-- pagebreak -->\';\\n  $navigation = $modx->getChunk(\'tpl.PageBreaker.navigation\');\\n  if ($pb_load_jquery) {$modx->regClientStartupScript(\\"<script type=\'text\\/javascript\' src=\'https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/1.6.1\\/jquery.min.js\'><\\/script>\\");}\\n  if ($pb_ajax) {$modx->regClientScript($modx->getChunk(\'tpl.PageBreaker.ajax\'));}\\n  \\/\\/echo $pb_ajax; die;\\n  \\/*\\teof config\\t*\\/\\n  \\n  $content = $modx->resource->content;\\n  $pagecontent = explode($splitter, $content);\\n  $pagecount = count($pagecontent);\\n\\n  if ($pagecount <= 1) {return;}\\n \\n  if (preg_match(\\"#[a-z0-9_\\\\-]+_p(\\\\d+)\\\\.html#si\\", $_REQUEST[\'q\'], $m)) {\\n    $_REQUEST[\\"page\\"] = (int) $m[1];\\n  }\\n\\n\\n  $currentpage = isset($_REQUEST[\\"page\\"]) ? $_REQUEST[\\"page\\"]: 1;\\n  if ($currentpage > $pagecount || $currentpage < 1) { $currentpage = 1; }\\n\\n  \\/\\/$char = ($modx->config[\'friendly_urls\'] == 0) ? \\"&\\" : \\"?\\";\\n  \\/\\/$url = $modx->makeurl($modx->resource->content[\\"id\\"],\'\',$char.\'page=\');\\n\\n  if (preg_match(\\"#(.*?\\/[a-z0-9_\\\\-]+)\\\\.html$#si\\", $url, $m)) {\\n    $url = $m[1];\\n  }\\n\\n  $prevpage = $currentpage - 1;\\n  $nextpage = $currentpage + 1;\\n\\n\\n  $html_type = $modx->getObject(\'modContentType\', array(\'mime_type\' => \'text\\/html\'));\\n  $html_ext = $html_type->get(\'file_extensions\');\\n  $url = str_replace($html_ext, \'\', $modx->makeUrl($modx->resource->id));\\n\\n  if ($prevpage <= 1) {\\n    $link_prev = ($prevpage > 0) ? $url.$html_ext : \'\';\\n  }\\n  else {\\n    $link_prev = ($prevpage > 0) ? $url.\\"_p\\".$prevpage.$html_ext : \'\';\\n  }\\n  \\n  $current = $currentpage;\\n  $total = $pagecount;\\n  $link_next = ($nextpage > $pagecount) ? \'\' : $url.\\"_p\\".$nextpage.$html_ext;\\n  \\n  \\n  $modx->setPlaceholder(\'pb.link_prev\', $link_prev);\\n  $modx->setPlaceholder(\'pb.link_next\', $link_next);\\n  $modx->setPlaceholder(\'pb.current\', $current);\\n  $modx->setPlaceholder(\'pb.total\', $total);  \\n\\n  $content = $pagecontent[$currentpage-1] . $navigation;\\n\\n  \\/\\/print_r($content);die;\\n  \\/\\/  $cacheManager= $modx->getCacheManager();\\n  \\/\\/  $cacheManager->clearCache();  \\n  if ($_SERVER[\'HTTP_X_REQUESTED_WITH\'] == \'XMLHttpRequest\') {\\n    if ($_POST[\'action\'] == \'PageBreakLoad\') {\\n      $modx->getParser()->processElementTags(\'\', $content, true, false, \'[[\', \']]\', array(), 10);\\n      $modx->getParser()->processElementTags(\'\', $content, true, true, \'[[\', \']]\', array(), 10);\\n      echo $content;\\n      die;\\n    }\\n  }\\n  else {\\n      $modx->resource->content = $content;\\n  }\\n  \\n}","locked":0,"properties":"a:2:{s:7:\\"pb_ajax\\";a:6:{s:4:\\"name\\";s:7:\\"pb_ajax\\";s:4:\\"desc\\";s:0:\\"\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";N;}s:14:\\"pb_load_jquery\\";a:6:{s:4:\\"name\\";s:14:\\"pb_load_jquery\\";s:4:\\"desc\\";s:0:\\"\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";N;}}","disabled":0,"moduleguid":""}',
+);

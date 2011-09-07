@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'frontpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '60a69e09392293ec653e75d506f0a70e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8f2425435e58a7413c0de1a3f2fe5907',
+  'native_key' => 'ajax_resource',
+  'object' => '{"key":"ajax_resource","value":0,"xtype":"textfield","namespace":"frontpage","area":"Frontpage","editedon":null}',
+);

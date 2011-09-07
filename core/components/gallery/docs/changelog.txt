@@ -1,0 +1,113 @@
+Changelog for Gallery.
+
+Gallery 1.2.2
+====================================
+- [#92] Fix issue when uploading item with html description
+- [#124] Fix document root issue with watermarks
+- [#121] Add extra placeholders for containerTpl chunk
+- [#113] Fix name of thumbnails being connector.php
+
+Gallery 1.2.1
+====================================
+- [#107] Fix issue with abstract method definition in galZipImport class
+- [#95] Fix issue where thumbFar property was incorrectly set as a boolean
+- [#112] Fix issue with images not respecting gallery.thumbs_prepend_site_url setting
+- [#104] Fix issue with Content Type on cached thumbnails
+
+Gallery 1.2.0
+====================================
+- [#97] Change thumbnail logic to use phpthumbof style php code in connector, vastly improving load/thumbnailing speed, and properly caching images
+- [#76], [#94], Zip upload now accepts zip files with just files inside
+- [#102] Fix issue with Gallery and Revolution 2.1.1+
+- [#80] Added GalleryAlbumList custom TV, for selecting Albums in a TV
+- [#82] Fix bug where creating Album did not respect parent
+- [#85] Add random sorting to albums in GalleryAlbums
+
+Gallery 1.1.1
+====================================
+- Fix trivial issue with js console error when saving albums
+
+Gallery 1.1.0
+====================================
+- [#73] Fix issue with absoluteImage galItem issue and gallery.thumbs_prepend_site_url setting
+- Fix issue where marking gallery active/prominent did not stick
+- [#28], [#64] Gallery items are now stored by albumId/itemId.ext in their directories
+- Added showName for GalleryAlbums to toggle whether or not to display Album name
+- [#29], [#69] Add batch upload via Zip file to albums
+- [#42] Add URL field to galItem object for allowing Items to have URLs that load when you click on them
+- [#46] Add imageProperties, thumbProperties properties to all snippets that allow you to pass a JSON object of properties to pass to phpThumb
+- Add rowCls property to GalleryAlbums
+- [#60] Fix issue with galPhpThumb and image passthru
+- [#67] Fix prev lexicon placeholder in Galleriffic plugin
+- [#66] Fix issue with album cover xPDO call in GalleryAlbums snippet
+- Add total property to Gallery snippet for getPage support
+- i18n of Snippet properties
+
+Gallery 1.0.2
+====================================
+- [#31] Add &gallerifficUseCss parameter for toggling CSS by Galleriffic
+- Add cover ability to GalleryAlbums by using rowTpl "galAlbumRowWithCoverTpl"
+- Fix issue where Gallery TV albums tree loaded page when clicking on a node
+
+Gallery 1.0.1 (December 20th, 2010)
+====================================
+- [#54] Added filepath placeholder for getting absolute path of an image, fileurl for absolute URL
+- [#12] Make left-click do update-album in mgr tree
+- Add additional system setting checks for phpthumb config options.
+- *Many* caching improvements to phpthumb-generated thumbnails
+- Added gallery.thumbs_prepend_site_url setting for environments having issues with thumbnails
+- Fixed bugs with HTML in item thumbs, urls when xhtml_urls is true
+- Added French translation, github readme
+
+Gallery 1.0.0
+=============
+- Added checks to prevent spaces in filenames
+- Fixed ampersand issue in gallery URLs
+- Fixed phpthumb cache issue by using core phpthumb
+- Fixed port issue on thumbs
+- Added updated Russian translation
+- Added cropping support to custom TV, fixed bugs
+- Added rotating, watermark and other options to custom TV
+- Added a few settings for customizing backend mgr UX, including default batch upload path
+- Fixed bug with sorting items in album
+- Added Gallery custom TV input, output and properties types
+- Adjusted code to allow batch upload to handle uppercase extensions
+- Updated copyright information
+
+Gallery 0.1.2
+====================================
+- Fixed bug with request parameter generation in URLs
+- Abstracted SQL in snippets
+- Added in Russian translation
+
+Gallery 0.1.1
+====================================
+- Added "image_absolute" placeholder to thumbTpl in Gallery snippet
+- Fixed possible issues with phpthumb and caching
+
+Gallery 0.1.0
+====================================
+- Added in batch upload
+- Fixed bug with limit statement in Gallery snippet
+- Made it so Gallery snippet can be called without pointing to anything
+- More properly integrated system, so that albums can easily be toggled between
+- Added GalleryItem snippet
+- Added parameters to adjust the get params for how albums are selected
+- Fixed bug with setting inactive state on images
+- Optimizing for Revo RC-2
+- Fixed bug that occurs if Gallery is used where FURLs are off
+- Added parent support to galAlbums, GalleryAlbums snippet
+- Fixed drag/drop reordering capability in albums
+- Fixed bug with gallery tables prefix
+- Fixed bug in items view related to recent SVN changes
+- Fixed bug in Gallery class that prohibited using tpls (!)
+- Added copyright info to Gallery
+- Fixed various bugs found in test install
+- Setup build script for initial alpha release
+- Added phpThumb to assets directory
+- Added active indicators, name shortening to album update mgr ui
+- Added album remove processor
+- i18ned the code, filled out mgr UI functionality
+- Added check when removing album to delete items not in any other albums
+- Lots of dev work, got basics mostly functional
+- Initial commit
