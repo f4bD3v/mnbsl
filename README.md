@@ -1,3 +1,3 @@
 mnbsl
 =====
-source code of website munbasel.ch
+source code of website http://www.munbasel.ch
